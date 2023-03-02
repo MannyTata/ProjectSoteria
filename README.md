@@ -26,4 +26,16 @@ Project Soteria aims to provide individuals and small businesses with the softwa
 * Selection of which files to encrypt, (user must manually select desired files).
 * Transfer of encrypted files to other drives.
 
-
+## Running
+  
+Paste the following code into terminal or simply press debug on vscode.
+  > /bin/python /home/kali/Documents/Soteria/main.py
+  
+The following prompt will pop up with instructions on how to proceed.
+  Hello User, welcome to Soteria. What task do you want to accomplish?
+   'e' for encryption
+   'd' for encryption
+   'k' to generate key
+   'show' to show key
+   or type 'end' to close out of the program.
+  What task do you want to accomplish? 
