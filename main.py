@@ -9,6 +9,7 @@ from startup.onStart import welcomeMsg
 #imports commands to encrypt
 from encryption.encryptFunction import encFile
 from encryption.makeKey import showKey, genKey
+
 #imports commands to decrypt
 from decryption.decryptFunction import decFile
 
