@@ -1,6 +1,7 @@
 # Welcome to Project Soteria.
 This project started in 01/5/2023 as a Senior project. Although there is no real reason to continue working on this after graduation, time will tell and feedback is always welcomed.
 
+Also current version works best in a unix/linux system with the Cryptography module installed.
 ## Original Contributors:
 
 * Manuel Texta - https://www.linkedin.com/in/manuel-texta-cybersecurity/
