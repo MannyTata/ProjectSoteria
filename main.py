@@ -38,7 +38,7 @@ def main():
                 print("Generating key...")
                 genKey()
             case _:
-                print("Unrecongized command, try again.")
+                print("Unrecognized command, try again.")
 
 
 main()
