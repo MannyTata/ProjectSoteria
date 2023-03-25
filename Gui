@@ -1,0 +1,62 @@
+from tkinter import *
+from cryptography.fernet import Fernet
+from startup.onStart import welcomeMsg
+from encryption.encryptFunction import encFile
+from encryption.makeKey import showKey, genKey
+from decryption.decryptFunction import decFile
+
+# Create the main window
+root = Tk()
+root.title("Encryption Program")
+
+# Define a function to perform encryption
+def encrypt():
+    encFile()
+    status_label.config(text="Encryption complete.")
+
+# Define a function to perform decryption
+def decrypt():
+    decFile()
+    status_label.config(text="Decryption complete.")
+
+# Define a function to generate a new encryption key
+def generate_key():
+    genKey()
+    status_label.config(text="Key generated.")
+
+# Define a function to display the current encryption key
+def show_key():
+    key = showKey()
+    status_label.config(text="Current key: " + key)
+
+# Define a function to quit the program
+def quit_program():
+    root.destroy()
+
+# Create the welcome message label
+welcome_label = Label(root, text=welcomeMsg)
+welcome_label.pack(pady=10)
+
+# Create the buttons for the different tasks
+encrypt_button = Button(root, text="Encrypt", command=encrypt)
+encrypt_button.pack(pady=5)
+
+decrypt_button = Button(root, text="Decrypt", command=decrypt)
+decrypt_button.pack(pady=5)
+
+generate_key_button = Button(root, text="Generate Key", command=generate_key)
+generate_key_button.pack(pady=5)
+
+show_key_button = Button(root, text="Show Key", command=show_key)
+show_key_button.pack(pady=5)
+
+# Create a label to display the status of the current task
+status_label = Label(root, text="")
+status_label.pack(pady=10)
+
+# Create the quit button
+quit_button = Button(root, text="Quit", command=quit_program)
+quit_button.pack(pady=5)
+
+# Start the GUI main loop
+root.mainloop()
