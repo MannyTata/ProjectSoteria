@@ -8,7 +8,7 @@ Also current version works best in a unix/linux system with the Cryptography mod
 
 * Cooper Holmes - <LinkedIn or Contact info>
 
-* Elie Gourdet - <LinkedIn or Contact info>
+* Elie Gourdet - https://www.linkedin.com/in/elie-gourdet-2669571a9/
 
 * Miguel Armienta - <LinkedIn or Contact info>
 
